@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+<div class="container">
+    <h2 class="text-center p-3">Detalle de la Pelicula {{pelicula.id}}</h2>
+    <div class="card">
+        <img class="card-img-top" src={{pelicula.imagen}} alt="{{pelicula.reseña}}">
+        <div class="card-body text-center">
+            <h4 class="card-title">{{pelicula.reseña}}</h4>
+            <span class="badge badge-pill badge-primary p-2">{{pelicula.director}}</span>
+            <p class="card-text pt-3">{{pelicula.sipnosis}}</p>
+            <p class="card-text pt-3">{{pelicula.lugar}}</p>
+            <a href="{% url 'index' %}" class="btn btn-primary">Retornar</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

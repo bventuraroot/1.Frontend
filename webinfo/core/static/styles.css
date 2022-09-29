@@ -1,0 +1,33 @@
+<style type="text/css">
+    img{
+      height: 200px;
+    }
+    .card{
+      width: 350px;
+      display: block;
+      margin: 0 auto;
+    }
+    .btn-primary{
+       display: block;
+      margin: 0 auto;
+      width: 50%;
+
+    }
+    .fab{
+      padding: 5px;
+      font-size: 28px;
+    }
+    .fab:hover{
+      color:#e91e63;
+
+    }
+    .btn-primary:hover{
+      background: #F1C40F;
+      border-color: #F1C40F;
+    }
+  @media(max-width: 380px){
+    .card{
+      width: auto;
+    }
+  }
+  </style>
