@@ -1,7 +1,22 @@
 {% extends 'base/base.html' %}
 {% block content %}
     <h1 style="text-align:center">Clasicos del Cine- Reseñas de Peliculas</h1>
+
 <div class="m-4">
+    <div class="container">
+        <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <form method="GET" action="" >
+                <div class="form">
+                  <i class="fa fa-search"></i>
+                  <input type="text" name="q" class="form-control form-input" placeholder="Search Reseña...">
+                  <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="row row-cols-1 row-cols-md-2 g-4">
     {% for item in peliculas %}
         <div class="col">
